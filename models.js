@@ -18,7 +18,7 @@ blogPostSchema.methods.apiRepr = function() {
     id: this._id,
     title: this.title,
     content: this.content,
-    author: this.authorString
+    authorName: `${this.author.firstName} ${this.author.lastName}`
   }
 }
 
